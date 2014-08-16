@@ -1,0 +1,19 @@
+<head>
+  <title>Principal</title>
+</head>
+
+<body>
+
+<h1>Últimos Posts:</h1>
+
+<% @posts.each do |post| %>
+
+  <div class="post">
+  <h2><%= post.body %></h2>
+
+  </div>
+
+<% end %>
+</body>
+
+<%= link_to 'Novo Post', new_post_path %>
